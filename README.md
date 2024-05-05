@@ -8,10 +8,10 @@ In the displayed image, there are one server (in the left corner) and three clie
 
 ##  2.2: Modifying the websocket port
 **In the server file**
-<img src = "img/2.2 server png">
+<img src = "img/2.2 server.png">
 
 **In the client file**
-<img src = "img/2.2 client png">
+<img src = "img/2.2 client.png">
 
 To enable communication between the client and the server, both parts must be adjusted to use the same port. If the ports on the client and server differ, the client will not be able to connect to the server. In both files, the host for communication is determined in the main function. However, in server.rs, it appears not to use the Websocket protocol as there is no ws:// at the beginning of the URL in the listener. Additionally, the server uses TcpListener, indicating that the TCP protocol is being used.
 
