@@ -17,3 +17,8 @@ To enable communication between the client and the server, both parts must be ad
 
 **Cargo run**
 <img src = "img/2.2.png">
+
+##  2.3: Small changes, add IP and Port
+<img src = "img/2.3.png">
+
+In the depicted image, I've tested a server and clients by adding Hostname, IP, and port information. To obtain the Hostname, I used the `gethostname` package and added a variable `hostname = gethostname().into_string().unwrap_or_else(|_| "unknown".to_string());`, which is used in `println!` to display the Hostname. Additionally, I attempted to add sender information to each client by including my computer's host name using the `gethostname` dependency. This dependency was then used to modify the print command on the server and clients, resulting in the running program as seen in the image.
